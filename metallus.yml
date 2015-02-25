@@ -5,7 +5,7 @@ packages:
 github_base_url: "https://github.com/madebymany/bats-package"
 
 jobs:
-  web:
+  bats:
     builder: "make"
     base: "quay.io/madebymany/build-bases:trusty"
     packages:
