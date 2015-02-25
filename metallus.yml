@@ -1,0 +1,16 @@
+packages:
+  branch_codenames:
+    master: stable
+
+github_base_url: "https://github.com/madebymany/bats-package"
+
+jobs:
+  web:
+    builder: "make"
+    base: "quay.io/madebymany/build-bases:trusty"
+    packages:
+      - name: bats
+        version: 0.4.0
+        target: install
+        repos:
+          - mxm-public
