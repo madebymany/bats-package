@@ -4,6 +4,10 @@ packages:
 
 github_base_url: "https://github.com/madebymany/bats-package"
 
+notifications:
+  - type: slack
+    channel: "#devops"
+
 jobs:
   bats:
     builder: "make"
